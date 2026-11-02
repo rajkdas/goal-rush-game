@@ -21,7 +21,9 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 22.11.0
+      - key: HOSTNAME
+        value: 0.0.0.0
       - key: DATABASE_URL
-        value: file:/tmp/goalrush.db # ephemeral on free tier; recreated + seeded at each boot
+        value: file:/tmp/goalrush.db
       - key: NEXT_TELEMETRY_DISABLED
         value: "1"

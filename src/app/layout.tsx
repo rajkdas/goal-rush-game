@@ -20,7 +20,12 @@ export const metadata: Metadata = {
   keywords: ["pinball", "slots", "Phaser 3", "Matter.js", "soccer", "arcade", "web game"],
   authors: [{ name: "GOAL RUSH" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "GOAL RUSH — Pinball × Slots",
